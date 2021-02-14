@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZokuswPJwOriH8h/wXk0JidVgFN7B0VUD+qgG8hq4BtqpVPFTnRoypZ2kGqwyQWpsZ/RrhwQs6fHQQ0aLct0Cw==",
+  "dgSpecHash": "AR7NSu2Xd6my1VJP6M0xy9gI2Ab+SymOncK/qwm9V0GnFgpoChPGpGJKSNKB7b4BqhQ1ILIAQdUfDy1wFyqevg==",
   "success": true,
-  "projectFilePath": "/Users/gorkemberksahan/Desktop/MarsRover/MarsRover.csproj",
+  "projectFilePath": "/Users/gorkemberksahan/Desktop/MarsRover/MarsRoverConsole.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
