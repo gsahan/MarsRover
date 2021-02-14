@@ -28,20 +28,40 @@ namespace MarsRover.Tests
 
         }
 
-
         [Fact]
         public void TestCommand()
         {
 
             Map map = new Map(5,5);
-            Rover rover = new Rover(map,new Coordinate(1,2),Directions.north);
+            Rover rover1 = new Rover(map,new Coordinate(1,2),Directions.north);
+            Rover rover2 = new Rover(map, new Coordinate(3, 3), Directions.east);
+            rover1.ExecuteCommand("LMLMLMLMM");
+            rover2.ExecuteCommand("MMRMMRMRRM");
 
-            CommandHandler.Handle("LMLMLMLMM",rover);
 
 
-            Assert.True(rover.coordinate.x.ToString()+rover.coordinate.y.ToString()+rover.direction == "13N","rover move failed.");
+            Assert.True(rover1.coordinate.x.ToString()+rover1.coordinate.y.ToString()+rover1.direction == "13N","rover1 move failed.");
+            Assert.True(rover2.coordinate.x.ToString() + rover2.coordinate.y.ToString() + rover2.direction == "15E", "rover2 move failed.");
+
 
 
         }
+
+        [Fact]
+        public void TestFactory()
+        {
+
+            var mhandler = HandlerFactory.GetHandler('M');
+
+            var dhandler = HandlerFactory.GetHandler('L');
+
+
+            Assert.False(mhandler == null, "mhandler is null");
+            Assert.False(dhandler == null, "dhandler is null");
+
+
+
+        }
+
     }
 }
