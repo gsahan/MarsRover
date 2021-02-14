@@ -6,5 +6,6 @@ namespace MarsRover.Constants
         public const string right = "R";
         public const string left = "L";
 
+
     }
 }

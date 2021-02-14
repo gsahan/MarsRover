@@ -3,12 +3,8 @@
 *.pdb
 *.dll
 MarsRover/Interfaces/IRover.cs
-MarsRover/bin/Debug/netstandard2.0/MarsRover.dll
-MarsRover/bin/Debug/netstandard2.0/MarsRover.pdb
-MarsRover/obj/Debug/netstandard2.0/MarsRover.csproj.CoreCompileInputs.cache
-MarsRover/obj/Debug/netstandard2.0/MarsRover.csprojAssemblyReference.cache
-MarsRover/obj/Debug/netstandard2.0/MarsRover.dll
-MarsRover/obj/Debug/netstandard2.0/MarsRover.pdb
-MarsRover.Console/obj/Debug/netcoreapp3.1/MarsRover.Console.csprojAssemblyReference.cache
-MarsRover/bin/Debug/netstandard2.0/MarsRover.dll
-MarsRover/bin/Debug/netstandard2.0/MarsRover.dll
+MarsRover/bin/Debug/netstandard2.0/*.dll
+MarsRover/bin/Debug/netstandard2.0/*pdb
+MarsRover/obj/Debug/netstandard2.0/*.cache
+MarsRover.Console/obj/Debug/netcoreapp3.1/*.cache
+.gitignore
