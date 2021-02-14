@@ -1,0 +1,10 @@
+
+*.dll
+*.pdb
+*.dll
+MarsRover/Interfaces/IRover.cs
+MarsRover/bin/Debug/netstandard2.0/*.dll
+MarsRover/bin/Debug/netstandard2.0/*pdb
+MarsRover/obj/Debug/netstandard2.0/*.cache
+MarsRover.Console/obj/Debug/netcoreapp3.1/*.cache
+.gitignore
