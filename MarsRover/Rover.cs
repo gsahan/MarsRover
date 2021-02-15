@@ -18,15 +18,7 @@ namespace MarsRover
             {
                     if (value.x < map.xCorLimit + 1  && value.x > -1 && value.y < map.yCorLimit + 1 && value.y > -1)
                     {
-                        if(map.isEmptyZone(value) )
-                        {
-                            var old = new Coordinate(this.coordinate);
-                            _coordinate = value;
-                            map.setRoverPositiontoMap(this,old);
-                        }
-                        else{
-                            Console.WriteLine("Move rejected, there is another rover here!");
-                        }
+                        _coordinate = value; 
                     }
             } 
         }
@@ -38,7 +30,6 @@ namespace MarsRover
             this.map = map;            
             this._coordinate = cor;
             this.direction = direction;
-            map.setRoverPositiontoMap(this, null);
         }
 
         public void ExecuteCommand(string cmd)
