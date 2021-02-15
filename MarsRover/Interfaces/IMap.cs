@@ -6,8 +6,5 @@ namespace MarsRover.Interfaces
         int xCorLimit { get; set; }
         int yCorLimit { get; set; }
 
-        bool isEmptyZone(Coordinate cor);
-        void setRoverPositiontoMap(IRover rover, Coordinate oldPos);
-
     }
 }
